@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    transition: 0.5s;
+}
+
+nav.active {
+    color: black;
+    /* background-color: #00aeda; */
+    background-color: #fff;
+    height: 60px;
+}
+
+nav * {
+    margin: 8px 32px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 8px;
+}
+
+#logo img {
+    background-color: black;
+}
+
+.hero {
+    background: url("assets/img/header-bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+h1 {
+    animation-name: typed-cursor;
+    border-right-style: solid;
+    border-right-width: 4px;
+    animation-duration: 1s;
+    padding-right: 4px;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+
+#o-nas {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #efefef;
+}
+
+.numbers {
+    text-align: center;
+    color: #002a4e;
+    /* font-weight: 700; */
+    font-size: 24px;
+}
+
+
+.big-number {
+    font-size: 160px;
+}
+
+@keyframes typed-cursor {
+
+    0%,
+    100% {
+        border-color: #00aeda;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
