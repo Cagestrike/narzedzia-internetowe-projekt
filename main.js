@@ -1,10 +1,10 @@
 const bigNumbers = document.querySelectorAll('.big-number');
 
-const oNas = document.getElementById('o-nas');
+const about = document.getElementById('about');
 window.addEventListener('scroll', displayNumbers);
 
 function displayNumbers() {
-    if (oNas.getBoundingClientRect().top - window.innerHeight <= 0) {
+    if (about.getBoundingClientRect().top - window.innerHeight <= 0) {
         window.removeEventListener('scroll', displayNumbers);
 
         bigNumbers.forEach((el) => {
