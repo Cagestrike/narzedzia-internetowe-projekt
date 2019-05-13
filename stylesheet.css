@@ -171,9 +171,10 @@ section {
 }
 
 .grid-item {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     text-align: center;
+    overflow: hidden;
 }
 
 .exercise-photo {
@@ -188,9 +189,10 @@ section {
 }
 
 .exercise-photo img {
-    display: block;
+    /* display: block; */
     width: 100%;
     height: 100%;
+    /* border-radius: 0.1px; */
     /* width: 300px;
     height: 300px;  */
     object-fit: cover;
@@ -299,7 +301,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     height: 330px;
     border: solid red 1px;
 }
