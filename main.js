@@ -1,4 +1,4 @@
-const bigNumbers = document.querySelectorAll('.big-number');
+const bigNumbers = document.querySelectorAll('.numbers__big');
 
 const about = document.getElementById('about');
 window.addEventListener('scroll', displayNumbers);
@@ -29,9 +29,9 @@ const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     console.log(window.scrollY);
     if (window.scrollY) {
-        nav.classList.add('active');
+        nav.classList.add('menu--active');
     } else {
-        nav.classList.remove('active');
+        nav.classList.remove('menu--active');
     }
 });
 
