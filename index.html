@@ -16,7 +16,23 @@
 
         <img src="assets/img/logo.png" id="logo" alt="logo">
 
-        <ul class="flex">
+        <ul class="menu__top">
+            <li>strona glowna</li>
+            <li>o nas</li>
+            <li>zajecia</li>
+            <li>opinie klientow</li>
+            <li>galeria</li>
+            <li>cennik</li>
+            <li>zapisz sie!</li>
+        </ul>
+
+        <div class="menu__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu__aside">
             <li>strona glowna</li>
             <li>o nas</li>
             <li>zajecia</li>
@@ -28,25 +44,25 @@
     </nav>
 
     <header class="hero">
-        <h3>Take care of your body.</h3>
-        <h1 class="hero__title">It's the only place you have to live.</h1>
+        <h3 class="section__subtitle">Moc, energia, endorfina!</h3>
+        <h1 class="hero__title">Zmień swoje życie na lepsze - z nami!</h1>
     </header>
 
     <section id="about">
         <h2 class="section__title">nasza sieć w liczbach</h2>
         <div class="flex flex--even">
             <div class="numbers">
-                <p class="numbers__big">127</p>
+                <p class="numbers--big">127</p>
                 <p>Liczba siłowni na całym świecie</p>
             </div>
 
             <div class="numbers">
-                <p class="numbers__big">12</p>
+                <p class="numbers--big">12</p>
                 <p>Liczba siłowni, które wkrótce otworzymy</p>
             </div>
 
             <div class="numbers">
-                <p class="numbers__big">13</p>
+                <p class="numbers--big">13</p>
                 <p>W tylu krajach się znajdujemy</p>
             </div>
         </div>
@@ -62,7 +78,7 @@
             <div class="flex argument">
                 <div class="argument__circle"></div>
                 <div class="argument__description">
-                    <h3>Jesteśmy otwarci 24/7</h3>
+                    <h3 class="section__subtitle">Jesteśmy otwarci 24/7</h3>
                     <p>Nie musisz się martwić o to kiedy do nas przyjść - zrobisz to kiedy zechcesz bez względu na dni
                         świąteczne!</p>
                 </div>
@@ -71,7 +87,7 @@
             <div class="flex argument">
                 <div class="argument__circle"></div>
                 <div class="argument__description">
-                    <h3>Dowolność wyboru</h3>
+                    <h3 class="section__subtitle">Dowolność wyboru</h3>
                     <p>Skorzystaj z treningu gdziekolwiek jesteś - możesz trenować w każdym z naszych 127 klubów na
                         świecie. </p>
                 </div>
@@ -80,7 +96,7 @@
             <div class="flex argument">
                 <div class="argument__circle"></div>
                 <div class="argument__description">
-                    <h3>Różnorodność zajęć</h3>
+                    <h3 class="section__subtitle">Różnorodność zajęć</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deleniti laborum adipisci nam
                         consequuntur illum
                     </p>
@@ -90,7 +106,7 @@
             <div class="flex argument">
                 <div class="argument__circle"></div>
                 <div class="argument__description">
-                    <h3>Jesteśmy otwarci 24/7</h3>
+                    <h3 class="section__subtitle">Jesteśmy otwarci 24/7</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deleniti laborum adipisci nam
                         consequuntur illum
                     </p>
@@ -109,7 +125,7 @@
         <div class="img-grid">
 
             <div class="activity">
-                <h3 class="activity__title">yoga&pilates</h3>
+                <h3 class="section__subtitle section__subtitle--animated">yoga&pilates</h3>
                 <div class="activity__photo" id="yoga">
                     <img src="assets/img/yoga.jpg" alt="" srcset="">
                     <div class="flex activity__description">
@@ -122,7 +138,7 @@
             </div>
 
             <div class="activity">
-                <h3 class="activity__title">boks</h3>
+                <h3 class="section__subtitle section__subtitle--animated">boks</h3>
                 <div class="activity__photo" id="boxing">
                     <img src="assets/img/boxing.jpg" alt="" srcset="">
                     <div class="flex activity__description">
@@ -135,7 +151,7 @@
             </div>
 
             <div class="activity">
-                <h3 class="activity__title">cycling</h3>
+                <h3 class="section__subtitle section__subtitle--animated">cycling</h3>
                 <div class="activity__photo" id="cycling">
                     <img src="assets/img/cycling.jpg" alt="" srcset="">
                     <div class="flex activity__description">
@@ -148,7 +164,7 @@
             </div>
 
             <div class="activity">
-                <h3 class="activity__title">stretching</h3>
+                <h3 class="section__subtitle section__subtitle--animated">stretching</h3>
                 <div class="activity__photo" id="stretching">
                     <img src="assets/img/stretching.jpg" alt="" srcset="">
                     <div class="flex activity__description">
@@ -161,7 +177,7 @@
             </div>
 
             <div class="activity">
-                <h3 class="activity__title">crossfit</h3>
+                <h3 class="section__subtitle section__subtitle--animated">crossfit</h3>
                 <div class="activity__photo" id="crossfit">
                     <img src="assets/img/crossfit.jpg" alt="" srcset="">
                     <div class="flex activity__description">
@@ -174,7 +190,7 @@
             </div>
 
             <div class="activity">
-                <h3 class="activity__title">zdrowy kręgosłup</h3>
+                <h3 class="section__subtitle section__subtitle--animated">zdrowy kręgosłup</h3>
                 <div class="activity__photo" id="spine">
                     <img src="assets/img/spine.jpg" alt="" srcset="">
                     <div class="flex activity__description">
@@ -193,10 +209,10 @@
 
         <div class="flex">
 
-            <div class="slanted right">
-                <div class="flex service-description">
-                    <h3>spersonalizowana dieta</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <div class="slanted slanted--right">
+                <div class="flex slanted__description">
+                    <h3 class="section__subtitle">spersonalizowana dieta</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         ut
@@ -213,10 +229,10 @@
 
         <div class="flex reverse">
 
-            <div class="slanted left">
-                <div class="flex service-description">
-                    <h3>treningi personalne</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <div class="slanted slanted--left">
+                <div class="flex slanted__description">
+                    <h3 class="section__subtitle">treningi personalne</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         ut
@@ -233,10 +249,10 @@
 
         <div class="flex">
 
-            <div class="slanted right">
-                <div class="flex service-description">
-                    <h3>oferta dla profesjonalistów</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <div class="slanted slanted--right">
+                <div class="flex slanted__description">
+                    <h3 class="section__subtitle">oferta dla profesjonalistów</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         ut
@@ -253,10 +269,10 @@
 
         <div class="flex reverse">
 
-            <div class="slanted left">
-                <div class="flex service-description">
-                    <h3>treningi na świeżym powietrzu</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <div class="slanted slanted--left">
+                <div class="flex slanted__description">
+                    <h3 class="section__subtitle">treningi na świeżym powietrzu</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         ut
@@ -274,27 +290,30 @@
     </section>
 
     <section id="opinions">
+
         <h2 class="section__title">Co o nas mówią</h2>
 
         <div class="flex">
 
             <div class="text-bubble">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                     ut
-                    aliquip ex</p>
-                <p class="author"><img src="assets/img/portraits/man2.jpg" alt="">- John Doe</p>
+                    aliquip ex“</p>
+                <p class="text-bubble__author"><img src="assets/img/portraits/man2.jpg" alt=""><cite>- John Doe</cite>
+                </p>
             </div>
 
             <div class="text-bubble">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                     ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.</p>
-                <p class="author"><img src="assets/img/portraits/man1.jpg" alt="">- John Doe</p>
+                    cillum dolore eu fugiat nulla pariatur.“</p>
+                <p class="text-bubble__author"><img src="assets/img/portraits/man1.jpg" alt=""><cite>- John Doe</cite>
+                </p>
 
             </div>
 
@@ -303,20 +322,25 @@
         <div class="flex">
 
             <div class="text-bubble">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-                <p class="author"><img src="assets/img/portraits/woman1.jpg" alt="">- John Doe</p>
+                    aliquip ex ea commodo consequat.“</p>
+                <p class="text-bubble__author"><img src="assets/img/portraits/woman1.jpg" alt=""><cite>- John Doe</cite>
+                </p>
 
             </div>
 
             <div class="text-bubble">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                <p class="author"><img src="assets/img/portraits/woman2.jpg" alt="">- John Doe</p>
+                <p>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.“
+                </p>
+                <p class="text-bubble__author"><img src="assets/img/portraits/woman2.jpg" alt=""><cite>- John Doe</cite>
+                </p>
             </div>
         </div>
     </section>
@@ -324,33 +348,57 @@
     <section id="pricing">
         <h2 class="section__title">Cennik</h2>
 
-        <div class="flex center">
-            <div class="price-tag">
-                <h3>poranny</h3>
-                <p>39 PLN</p>
+        <div class="container">
+
+            <div class="price-box">
+                <div class="price-box__header">
+                    <h3 class="section__subtitle section__subtitle--no-margin">poranny</h3>
+                    <p class="price__tag">39 PLN</p>
+                </div>
+
                 <p>Jeśli nie potrzebujesz siłowni 24/7 - mamy dla Ciebie propozycję! Oferta pozwala na wejście do klubów
                     do godziny 13.</p>
-                <ul>
+                <ul class="price-box__list">
                     <li>Ponad 100 klubów</li>
                     <li>Ubezpieczenie NNW</li>
                     <li>Bez zobowiązań</li>
                     <li>0 zł opłaty wpisowej</li>
                 </ul>
             </div>
-            <div class="price-tag active">
-                <h3>3-miesięczny</h3>
-                <p>140 PLN</p>
-                <ul>
+
+            <div class="price-box">
+                <div class="price-box__header">
+                    <h3 class="section__subtitle section__subtitle--no-margin">miesięczny</h3>
+                    <p class="price__tag">59 PLN</p>
+                </div>
+                <ul class="price-box__list">
                     <li>Ponad 100 klubów</li>
                     <li>Ubezpieczenie NNW</li>
                     <li>Bez zobowiązań</li>
                     <li>0 zł opłaty wpisowej</li>
                 </ul>
             </div>
-            <div class="price-tag">
-                <h3>miesięczny</h3>
-                <p>59PLN</p>
-                <ul>
+
+            <div class="price-box price-box--active">
+                <div class="price-box__header price-box__header--active">
+                    <h3 class="section__subtitle section__subtitle--no-margin">3-miesięczny</h3>
+                    <p class="price__tag">149 PLN</p>
+                </div>
+                <h4>bestseller!</h4>
+                <ul class="price-box__list price-box__list--active">
+                    <li>Ponad 100 klubów</li>
+                    <li>Ubezpieczenie NNW</li>
+                    <li>Bez zobowiązań</li>
+                    <li>0 zł opłaty wpisowej</li>
+                </ul>
+            </div>
+
+            <div class="price-box">
+                <div class="price-box__header">
+                    <h3 class="section__subtitle section__subtitle--no-margin">roczny</h3>
+                    <p class="price__tag">499 PLN</p>
+                </div>
+                <ul class="price-box__list">
                     <li>Ponad 100 klubów</li>
                     <li>Ubezpieczenie NNW</li>
                     <li>Bez zobowiązań</li>

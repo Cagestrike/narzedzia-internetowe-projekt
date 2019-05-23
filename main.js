@@ -1,4 +1,19 @@
-const bigNumbers = document.querySelectorAll('.numbers__big');
+const hamburgerBtn = document.querySelector('.menu__hamburger');
+const asideMenu = document.querySelector('.menu__aside');
+
+hamburgerBtn.addEventListener('click', (e) => {
+    asideMenu.classList.toggle('show');
+});
+
+document.addEventListener('click', (e) => {
+    if (e.target.closest('.menu__hamburger') || e.target == asideMenu) {
+        return;
+    } else {
+        asideMenu.classList.remove('show');
+    }
+});
+
+const bigNumbers = document.querySelectorAll('.numbers--big');
 
 const about = document.getElementById('about');
 window.addEventListener('scroll', displayNumbers);
@@ -34,4 +49,6 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('menu--active');
     }
 });
+
+
 
