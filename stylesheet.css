@@ -8,6 +8,12 @@ html {
     /* font-family: Rational Text, sans-serif; */
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /*  ======== 
@@ -66,15 +72,14 @@ html {
 }
 
 .menu--active {
-    color: black;
     /* background-color: #00aeda; */
     background-color: #fff;
     height: 60px;
 }
 
-/* nav * {
-    margin: 0 32px;
-} */
+.menu--active .menu__top a {
+    color: black;
+}
 
 nav ul li {
     margin: 8px;
@@ -90,7 +95,7 @@ nav ul li {
     ======== 
 */
 .hero {
-    background: url("assets/img/header.jpg") no-repeat 50% 50%;
+    background: url("assets/img/header.jpg") no-repeat 20% 50%;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -103,18 +108,18 @@ nav ul li {
 }
 
 .hero__title {
-    animation-name: typed-cursor;
+    /* animation-name: typed-cursor;
     border-right-style: solid;
     border-right-width: 4px;
-    animation-duration: 1s;
-    padding-right: 4px;
     animation-timing-function: step-end;
     animation-iteration-count: infinite;
+    animation-duration: 1s; */
+    padding-right: 4px;
     text-transform: uppercase;
     font-size: 48px;
 }
 
-@keyframes typed-cursor {
+/* @keyframes typed-cursor {
 
     0%,
     100% {
@@ -124,7 +129,7 @@ nav ul li {
     50% {
         border-color: transparent;
     }
-}
+} */
 
 /*  ======== 
     SECTIONS
@@ -223,7 +228,7 @@ section {
     border: solid white 2px;
 }
 
-#activites {
+#activities {
     background-color: #EFEFEF;
     color: #002A4E;
 }
@@ -523,7 +528,7 @@ section {
     }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 992px) {
     #pricing .container {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -533,24 +538,6 @@ section {
 
     .price-box {
         margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .menu__top {
-        display: none;
-    }
-
-    .menu__hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #EFEFEF;
-        width: 42px;
-        height: 42px;
-        margin-right: 32px;
-        border-radius: 6px;
-        cursor: pointer;
     }
 }
 
@@ -565,6 +552,22 @@ section {
 
     .section__subtitle {
         font-size: 20px;
+    }
+
+    .menu__top {
+        display: none;
+    }
+
+    .menu__hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #EFEFEF;
+        width: 42px;
+        height: 42px;
+        margin-right: 32px;
+        border-radius: 6px;
+        cursor: pointer;
     }
 
     #about .flex {
@@ -613,6 +616,31 @@ section {
     }
 
     .price-box {
+        /* width: 80%; */
         margin: 8px;
+    }
+
+    .slanted .section__subtitle {
+        font-size: 14px;
+    }
+
+    .slanted__description {
+        font-size: 11px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .price-box {
+        width: 75%;
+    }
+
+    .price-box--active h4 {
+        font-size: 32px;
+    }
+
+    .price-box__list--active {
+        font-size: 18px;
     }
 }

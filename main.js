@@ -25,7 +25,7 @@ function displayNumbers() {
         bigNumbers.forEach((el) => {
             let currentNum = Number(el.innerHTML);
             let i = 0;
-            let stepTime = Math.floor(1000 / currentNum);
+            let stepTime = Math.floor(2000 / currentNum);
 
             let timer = setInterval(function () {
                 i++;
