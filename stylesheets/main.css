@@ -16,6 +16,18 @@ a {
     color: white;
 }
 
+.btn {
+    background-color: #002A4E;
+    padding: 10px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: rgb(0, 53,
+        100);
+}
+
 /*  ======== 
     NAVIGATION
     ======== 
@@ -23,6 +35,7 @@ a {
 
 .menu {
     position: fixed;
+    top: 0;
     color: white;
     width: 100%;
     height: 80px;
@@ -61,6 +74,14 @@ a {
     transition: 1s all ease-in-out;
 }
 
+.menu__aside li {
+    display: block;
+    margin: 16px auto;
+    text-align: center;
+    border-bottom: solid 2px #EFEFEF;
+    width: 50%;
+}
+
 .menu__aside.show {
     transform: translateX(100%);
 }
@@ -81,6 +102,10 @@ a {
     color: black;
 }
 
+.menu--active a.btn {
+    color: white;
+}
+
 nav ul li {
     margin: 8px;
 }
@@ -95,7 +120,7 @@ nav ul li {
     ======== 
 */
 .hero {
-    background: url("assets/img/header.jpg") no-repeat 20% 50%;
+    background: url("../assets/img/header.jpg") no-repeat 20% 50%;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -634,6 +659,10 @@ section {
 @media screen and (max-width: 576px) {
     .price-box {
         width: 75%;
+    }
+
+    .price-box--active {
+        width: 80%;
     }
 
     .price-box--active h4 {

@@ -1,0 +1,85 @@
+@import "main.css";
+
+body {
+    background-color: #efefef;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 64px;
+    margin-left: 32px;
+}
+
+.menu__top li a {
+    color: black;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+    text-transform: lowercase;
+}
+
+input {
+    border: none;
+    border-bottom: 2px groove;
+    background: transparent;
+    font-size: 16px;
+    /* height: 100%; */
+}
+
+input:focus {
+    outline: 0;
+}
+
+.form__row {
+    display: flex;
+    /* flex-grow: 1; */
+    /* margin-bottom: 16px; */
+    /* padding: 8px; */
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 8px;
+}
+
+.form__buttons {
+    justify-content: center;
+}
+
+.btn--form {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.btn--submit {
+    flex-grow: 1;
+}
+
+.btn--reset {
+    background-color: red;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-form {
+        width: 80%;
+        margin: 64px auto 0;
+    }
+
+    .form__row {
+        flex-direction: column;
+    }
+}
