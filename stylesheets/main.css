@@ -246,7 +246,6 @@ section {
 
 .line {
     position: absolute;
-    z-index: 0;
     margin-top: 22px;
     box-sizing: border-box;
     width: 100%;
@@ -620,9 +619,16 @@ section {
         margin-bottom: 0;
     }
 
+    .flex.flex--even {
+        position: relative;
+    }
+
     .line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
         width: initial;
-        height: 100%;
+        /* height: 100%; */
     }
 
     .img-grid {
