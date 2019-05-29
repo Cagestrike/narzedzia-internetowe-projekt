@@ -10,6 +10,7 @@ body {
     width: 60%;
     margin-top: 64px;
     margin-left: 32px;
+    margin-bottom: 64px;
 }
 
 .menu__top li a {
