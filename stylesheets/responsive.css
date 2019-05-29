@@ -40,6 +40,14 @@
         display: none;
     }
 
+    .menu__bottom {
+        flex-direction: column;
+    }
+
+    .menu__bottom li {
+        margin: 4px 0;
+    }
+
     .menu__hamburger {
         display: flex;
         flex-direction: column;
