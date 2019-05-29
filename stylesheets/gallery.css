@@ -1,0 +1,87 @@
+@import "main.css";
+
+.menu__top li a {
+    color: black;
+}
+
+.menu__top li:last-child a {
+    color: white;
+}
+
+body {
+    background-color: #efefef;
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#slider img {
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+    background-color: #2E2E30;
+    transition: all 1s;
+}
+
+/* .slider--visible {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.slider--hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateX(-100%); */
+    }
+
+    to {
+        opacity: 1;
+        /* transform: translateX(0); */
+    }
+}
+
+/* @keyframes fadeOut {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(100%);
+
+    }
+} */
+
+button {
+    width: 64px;
+    font-size: 32px;
+    /* font-weight: 700; */
+    height: 75%;
+    border: none;
+    outline: 0;
+    /* color: white; */
+    background-color: #c5c5c5;
+    border-radius: 8px;
+}
+
+/* #prev {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-25%)
+} */

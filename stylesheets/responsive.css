@@ -1,0 +1,137 @@
+@media screen and (max-width: 1100px) {
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #pricing .container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    .price-box {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .btn--hero {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    .section__title {
+        font-size: 32px;
+    }
+
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .menu__top {
+        display: none;
+    }
+
+    .menu__hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #EFEFEF;
+        width: 42px;
+        height: 42px;
+        margin-right: 32px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #about .flex {
+        flex-direction: column;
+    }
+
+    #why-us .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .argument {
+        width: 80%;
+    }
+
+    .argument__description {
+        margin-bottom: 32px;
+        border: solid white 3px;
+        border-radius: 10px;
+        background-color: #2E2E30;
+        padding: 16px;
+    }
+
+    .argument:last-child .argument__description {
+        margin-bottom: 0;
+    }
+
+    #why-us>div {
+        position: relative;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: initial;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    #opinions .flex {
+        flex-direction: column;
+    }
+
+    #pricing .container {
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+    }
+
+    .price-box {
+        margin: 8px;
+    }
+
+    .slanted .section__subtitle {
+        font-size: 14px;
+    }
+
+    .slanted__description {
+        font-size: 11px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .price-box {
+        width: 75%;
+    }
+
+    .price-box--active {
+        width: 80%;
+    }
+
+    .price-box--active h4 {
+        font-size: 32px;
+    }
+
+    .price-box__list--active {
+        font-size: 18px;
+    }
+}
